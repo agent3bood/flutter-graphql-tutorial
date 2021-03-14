@@ -1,0 +1,7 @@
+# /lib/graphql/user_fragment.graphql
+fragment UserFragment on User {
+    id
+    name
+    username
+    email
+}

@@ -1,0 +1,7 @@
+# /lib/graphql/update_user.graphql
+#import "user_fragment.graphql"
+mutation UpdateUser($id: ID!, $input: UpdateUserInput!) {
+    updateUser(id: $id, input: $input) {
+        ...UserFragment
+    }
+}

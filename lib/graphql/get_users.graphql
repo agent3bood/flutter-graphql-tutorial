@@ -1,0 +1,9 @@
+# /lib/graphql/get_users.graphql
+#import "user_fragment.graphql"
+query GetUsers {
+    users {
+        data {
+            ...UserFragment
+        }
+    }
+}
